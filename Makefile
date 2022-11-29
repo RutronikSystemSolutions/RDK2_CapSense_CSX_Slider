@@ -46,7 +46,7 @@ TARGET=RDK2
 #
 # If APPNAME is edited, ensure to update or regenerate launch
 # configurations for your IDE.
-APPNAME=rdk2-capsense-csx-slider-example
+APPNAME=rdk2-capsense-csx-slider
 
 # Name of toolchain to use. Options include:
 #
