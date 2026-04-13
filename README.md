@@ -2,13 +2,13 @@
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "CapSense CSX Slider" Example. 
 
-This example is demonstrates how to use CapSense® Slider in CSX mode. 
+This example demonstrates how to use CapSense® Slider in CSX mode. 
 
 <img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.7 [tested with v3.7**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.7** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
@@ -110,12 +110,11 @@ Use one of the following options:
 <br />
 
 - **Use command-line interface (CLI):**
-
-  1. Follow the instructions from the **In command-line interface (CLI)** section to create the application.
-
-  2. Export the application to a supported IDE using the `make <ide>` command.
-
-  3. Follow the instructions displayed in the terminal to create or import the application as an IDE project.
+1. Follow the instructions from the **In command-line interface (CLI)** section to create the application.
+  
+2. Export the application to a supported IDE using the `make <ide>` command.
+  
+3. Follow the instructions displayed in the terminal to create or import the application as an IDE project.
 
 For a list of supported IDEs and more details, see the "Exporting to IDEs" section of the [ModusToolbox&trade; software user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at *{ModusToolbox&trade; software install directory}/docs_{version}/mtb_user_guide.pdf*).
 
@@ -123,19 +122,19 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
 ### Operation
 
-This example is to be used with KitProg3 UART for debug output and KitProg3 I2C for **CapSense Tuner** software. Only one peripheral may be used at the time. The firmware example initializes I2C library and enables CapSense Tuner software to connect, also initializes the CapSense peripheral which is configured using **CapSense Configurator** and processes the information gathered from the slider to control LED1 intensity from 0% to 100%.  
+This example is to be used with the KitProg3 UART for debug output and the KitProg3 I2C for the Tuner software. Only one peripheral may be used at a time. The firmware example initialises the I2C library and enables the CapSense Tuner software to connect; it also initialises the CapSense peripheral, which is configured using the, and processes the information gathered from the slider to control LED1 intensity from 0% to 100%.  
 
-Launch the CapSense Tuner from the **Quick Panel** Tools section and select the I2C interface in KitProg3 UART menu as it is shown:
+Launch the CapSense Tuner from the **Quick Panel** Tools section and select the I2C interface in the KitProg3 UART menu as it is shown:
 
 <img src="images/tuner_setup.png" style="zoom:100%;" />
 
-Click on **Connect** and **Start** to establish the connection via I2C. Select all the slider sensors to be monitored in **Widget Explorer**.
+Click **Connect** and **Start** to establish the I2C connection. Select all the slider sensors to be monitored in **Widget Explorer**.
 
 <img src="images/tuner_operation.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 and MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click the desired debug launch configuration, then wait for programming to complete and debugging to start.
 
 <img src="images/capsense_debug.png" style="zoom:100%;" />
 
